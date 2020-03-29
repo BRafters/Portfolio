@@ -1,0 +1,66 @@
+/* General Styles */
+html{
+     box-sizing: border-box;
+}
+*, *::before, *::after{
+     box-sizing: inherit;
+ }
+body{
+     margin: 0;
+     position: relative;
+     background-image: linear-gradient(rgba(241, 218, 191, 0.7), rgba(241, 218, 191, 0.3)), url("../images/IndexImages/capebreton.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-attachment: fixed;  
+}
+nav{
+     width: 99vw;
+     margin: 5px auto 0 auto;
+}
+
+
+/* Middle Div Content Styles */
+.description{
+     margin-bottom: 0;
+}
+.content{
+     display: inline-block;
+     padding-right: 25px;
+     width: 70%;
+}
+.profile-picture-s{
+     display: inline-block;
+     
+     width: 25%;
+}
+.picture{
+     display: inline-block;
+     height: 215px;
+     width: 215px;
+     border-radius: 50%;
+     background-size: cover;
+}
+
+/* Button Style Overrides */
+.btn-secondary{
+     transition: background-color 0.5s ease, color 0.5s ease !important;
+     margin-left: 5px;
+}
+.btn-secondary:hover{
+     background-color: rgba(0,0,0, 0.5) !important;
+     color: white !important;
+}
+
+/* Centering Divs */
+.vertical-center{
+     min-height: calc(95vh - 53px);
+     width: 60%;
+     margin: 0 auto;
+}
+
+.details{
+     background: rgba(255,255,255, 0.7);
+     height: 40vh;
+     border-radius: 5px;
+     padding: 10px;
+}

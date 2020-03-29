@@ -1,0 +1,103 @@
+/* Styles for career goals */
+/* Global Styles */
+html{
+    box-sizing: border-box;
+    background: #B33951;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+body{
+    color: #D1D1D1;
+    margin: 0;
+    scroll-behavior: smooth;
+    overflow: auto;
+}
+
+/* Header Styles */
+h1{
+    font-family: 'Lobster', cursive;
+    font-weight: lighter;
+}
+
+h4{
+    font-family: 'Signika', sans-serif;
+    font-weight: 300; 
+}
+
+header nav{
+    background: #B33951;
+    transition: background-color 0.5s ease;
+}
+
+header nav:hover{
+    background-color: #c85168;
+}
+
+/* Body styles */
+.headOfGoals{
+    border-bottom: 3px solid #6F0419;
+    padding-bottom: 30px;
+}
+.title{
+    display: table;
+    width: 100%;
+    text-align: center;
+    height: 100vh; /* Viewport Height */
+}
+.content{
+    display: table-cell;
+    vertical-align: middle;
+}
+.bodycontent{
+    width: 70%;
+    margin: 0 auto;
+    font-family: 'Signika', sans-serif;
+}
+.nar-col{
+    display: flex;
+    width: 30%;
+    float:left;
+    height: 175px;
+    text-align: center;
+    
+}
+.nar-col h1{
+    margin: auto;
+    height: 120px;
+    padding-right: 30px;
+    border-right: 1px solid #6F0419;
+}
+
+.wide-col{
+    display: flex;
+    height: 175px;
+}
+.wide-col p{
+    padding-left: 30px;
+    margin: auto;
+}
+
+/* Nav Styles */
+nav{
+    font-size: 0px;
+    width: 100%;
+    text-align: right;
+}
+nav a{
+    display: inline-block;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 3px 0;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-family: 'Signika', sans-serif;
+    color: #D1D1D1;
+    transition: background-color 0.2s ease;
+}
+
+nav a:hover{
+    background-color: #6F0419;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
+}
