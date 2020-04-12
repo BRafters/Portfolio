@@ -1,10 +1,6 @@
 body{
      margin: 0;
      position: relative;
-     background-image: linear-gradient(rgba(244, 244, 237, 0.3), rgba(244, 244, 237, 0.7)), url("../images/IndexImages/capebreton.jpg");
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-attachment: fixed;  
      animation: 1s ease-out 0s 1 slideInFromLeft !important;
 }
 /* Middle Div Content Styles */
@@ -32,6 +28,17 @@ body{
      background-size: cover;
 }
 
+.container-content{
+     background-image: linear-gradient(rgba(187, 197, 170, 0.3), rgba(221, 226, 198, 0.7)), url("../images/IndexImages/capebreton.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-attachment: fixed;  
+     height: 100vh;
+}
+
+.aboutme-title{
+     margin-top: 50px;
+}
 
 /* Mobile Styles */
 @media only screen and (max-height: 475px){
