@@ -150,7 +150,28 @@
     width: 100%;
     height: 90%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background-image: url('../images/ImagesForWorkExperience/BMC.png') !important;
+    background-color: #F1F7ED;
+    background-image: url('../images/ImagesForWorkExperience/Quizzy.png') !important;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.appdev-image.two{
+    width: 100%;
+    height: 90%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #EEE5E9;
+    background-image: url('../images/ImagesForWorkExperience/ListFragment.png') !important;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.appdev-image.three{
+    width: 100%;
+    height: 90%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #E0FBFC;
+    background-image: url('../images/ImagesForWorkExperience/Calculator.png') !important;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
