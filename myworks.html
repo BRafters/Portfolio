@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="css/myWorksStyles.css">
         <link rel="stylesheet" href="css/static.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/lux/bootstrap.min.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
     <body>
         <nav class="d-flex flex-row-reverse justify-content-center">
@@ -22,7 +23,7 @@
             <div class="works js">            
                 <h2>Javascript</h2>
                 <p>My favorite works in my Javascript course</p>
-                <a href=".javascript" class="btn btn-primary">Take a look</a>
+                <a href="#javascript" class="btn btn-primary">Take a look</a>
             </div>
             <div class="works capstone">
                 <h2>Capstone Project</h2>
@@ -47,20 +48,106 @@
         </div>
 
         <!-- Javascript Content -->
-        <div class="containers javascript d-flex flex-column justify-content-center align-items-center">
+        <div id="javascript" class="containers d-flex flex-column justify-content-center align-items-center">
             <h1 class="javascript-title">JavaScript</h1>
             <p class="javascript-desc">A functional programming language</p>
         </div>
-        <div class="containers js-one d-flex flex-row justify-content-center align-items-center">
+        <section class="containers d-flex js-one flex-row justify-content-center align-items-center">
             <div class="javascript-content containers left-col-one d-flex flex-column justify-content-center align-items-center">
-                <div class="content">
+                <div class="js-image" data-aos="fade-left" data-aos-duration="1000">
                     
                 </div>
             </div>
-            <div class="javascript-content containers right-col-one d-flex flex-column">
-                <h3>Blackjack</h3>
-                <p>Hello</p>
+            <div class="javascript-content right-col-one d-flex flex-column justify-content-center align-items-start">
+                <h3
+                data-aos="fade-up" 
+                data-aos-anchor-placement="center-bottom"
+                data-aos-duration="800">Blackjack</h3>
+                <p
+                data-aos="fade-up" 
+                data-aos-anchor-placement="center-bottom"
+                data-aos-duration="1600">
+                    For my second assignment in the Client-Side Programming course at NSCC, I created a the Blackjack page using
+                    pure Javascript and AJAX, where the user was playing against the 'computer' and would both be able to draw and stay.
+                    After each move, we would check for a win, and only certain actions would be available to the user at either game time or after/before
+                    the game session.
+                </p>
             </div>
+        </section>
+        <section class="containers d-flex js-two flex-row justify-content-center align-items-center">
+            <div class="javascript-content containers left-col-one d-flex flex-column justify-content-center align-items-center">
+                <div class="js-image two" data-aos="fade-right" data-aos-duration="1000">
+                    
+                </div>
+            </div>
+            <div class="javascript-content containers right-col-one d-flex flex-column justify-content-center align-items-start">
+                <h3
+                data-aos="fade-up" 
+                data-aos-anchor-placement="center-bottom"
+                data-aos-duration="800">Transit Tracker</h3>
+                <p
+                data-aos="fade-up" 
+                data-aos-anchor-placement="center-bottom"
+                data-aos-duration="1600">
+                    For my third assignment in the Client-Side Programming course at NSCC, I created a bus
+                    tracking page that utilizes the Leaflet and GeoJSON APIs, pure Javascript, and AJAX. In the application,
+                    we retrieve JSON data from data provided by the Halifax Regional Municipality and plot each bus location on the Leaflet map by using
+                    GeoJSON. Every seven to ten seconds we do the ajax call to receive new bus location data, delete the old data, and plot the new data on the Leaflet map.
+                </p>
+            </div>
+        </section>
+        <section class="containers d-flex js-two flex-row justify-content-center align-items-center">
+            <div class="javascript-content containers left-col-one d-flex flex-column justify-content-center align-items-center">
+                <div class="js-image three" data-aos="fade-left" data-aos-duration="1000">
+                    
+                </div>
+            </div>
+            <div class="javascript-content containers right-col-one d-flex flex-column justify-content-center align-items-start">
+                <h3
+                data-aos="fade-up" 
+                data-aos-anchor-placement="center-bottom"
+                data-aos-duration="800">Blogging application using REST and jQuery</h3>
+                <p
+                data-aos="fade-up" 
+                data-aos-anchor-placement="center-bottom"
+                data-aos-duration="1600">
+                    The objective for assignment four in Client-Side Programming was to create a simple blogging application that utilizes
+                    some jQueryUI styles, REST calls, AJAX calls, and jQuery code. In it, you are able to do an all HTTP requests to post a
+                    blog entry into the REST server, update a blog entry into the REST server, delete from the REST server, and retrieve data
+                    from the REST server. AJAX is a helper with all of these HTTP requests.
+                </p>
+            </div>
+        </section>
+
+        <!-- Capstone Project Content -->
+        <div id="capstone" class="containers d-flex flex-column justify-content-center align-items-center">
+            <h1 class="capstone-title">Capstone Project</h1>
+            <p class="capstone-desc">Partnering with industry leaders to create something new</p>
         </div>
+        <section class="containers d-flex flex-row justify-content-center align-items-center">
+            <div class="capstone-content containers left-col-one d-flex flex-column justify-content-center align-items-center">
+                <div class="capstone-image" data-aos="fade-left" data-aos-duration="1000">
+                    
+                </div>
+            </div>
+            <div class="capstone-content containers d-flex right-col-one flex-column justify-content-center align-items-start">
+                <h3>User Training Portal</h3>
+                <p>
+                    I have grouped up with fellow potential graduates to partner with Lockheed Margin in creating
+                    a 'User Training Portal'. For the scenario, this site is intended for people currently employed with Lockheed
+                    Martin where employees will be assigned to complete "Training Modules" to keep honing their abilities in the 
+                    field that they are working in. This site is created with Laravel that uses 512-bit RSA encryption for logging into the
+                    portal. Users have the ability to check their completed trainings, participate in their trainings, and even get certified
+                    that they have completed a necessary training module. This site emphasizes on security with loads of middleware and controllers involved.
+                    It is nearing completion so more content on the User Training Portal will be uploaded as soon as its complete.
+                </p>
+            </div>
+        </section>
+        
+        <!-- Adding the JS for the animations plugin -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+        <script>
+            AOS.init({duration: 500});
+        </script>
     </body>
 </html>

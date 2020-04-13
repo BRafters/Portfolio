@@ -29,7 +29,7 @@
 }
 
 /* Javascript Container Styles */
-.javascript{
+#javascript{
     background-image: url('../images/ImagesForWorkExperience/space_stars_milky_way_166418_3351x2233.jpg') !important;
     background-repeat: no-repeat;
     background-size: cover;
@@ -44,18 +44,61 @@
 .right-col-one{
     width: 60%;
 }
-.content{
-    width: 80%;
+.javascript-content{
+    padding: 0 50px;
+}
+.js-image{
+    width: 100%;
     height: 90%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-image: url("../images/ImagesForWorkExperience/Blackjack.png") !important;
     background-repeat: no-repeat;
-    background-size: contain;
-    
+    background-size: cover;
+    background-position: center;
+}
+.js-image.two{
+    background-image: url("../images/ImagesForWorkExperience/Buses.png") !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.js-image.three{
+    background-image: url("../images/ImagesForWorkExperience/Blogging.png") !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Capstone Styles */
+#capstone{
+    background-image: url('../images/ImagesForWorkExperience/miguel-bruna-DdiaNwoCK0c-unsplash.jpg') !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.capstone-title, .capstone-desc{
+    color: white;
+}
+.capstone-image{
+    width: 100%;
+    height: 90%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-image: url('../images/ImagesForWorkExperience/Capstone.png') !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.img-top{
+    width: 50%;
+}
+.capstone-content{
+    padding: 0 50px;
 }
 
 /* Images Used */
 /* Starry sky night trees night landscape -> https://wallpaperscraft.com/wallpaper/starry_sky_night_trees_night_landscape_118760
 Unknown author */
+
+/* Building photo by Miguel Bruna on Unsplash */
 
 /* Space stars milky way -> https://wallpaperscraft.com/wallpaper/space_stars_milky_way_166418 -> Hypatia Alexandria */
