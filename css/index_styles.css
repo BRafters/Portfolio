@@ -63,12 +63,54 @@ body{
      filter: blur(15px);
      z-index: -1;
 }
+
+/* All Content Container Styles */
+.container-details{
+     height: 350px;
+}
+
+/* About Me Styles */
 .aboutme-title{
-     margin: 40px 0 20px 0;
+     margin-bottom: 20px;
 }
 .aboutmedescription{
      width: 40%;
      font-size: 16px !important;
+}
+
+/* Work Experience Styles */
+.container-for-workexperience{
+     overflow: auto;
+}
+
+/* Skills Styles */
+.container-for-skills{
+     position: relative;
+     height: 350px;
+     overflow: hidden;
+     background-attachment: fixed;
+     background-repeat: no-repeat;
+     background-size: cover;
+     z-index: 1;
+}
+.container-for-skills:before{
+     background-image: linear-gradient(rgba(226, 226, 208, 0.3), rgba(226, 226, 208, 0.5)), url("../images/ImagesForWorkExperience/mountain_forest_dark_enhanced.jpg") !important;
+     content: "";
+     position: absolute;
+     background: inherit;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     left: 0;
+     /* box-shadow: inset 0 0 1000px rgb(0,0,0); */
+     z-index: -1;
+}
+.myskills-title{
+     color: #fff5e6;
+}
+.myskills-desc{
+     font-size: 16px;
+     color: #fff5e6;
 }
 
 
