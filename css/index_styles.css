@@ -11,7 +11,7 @@ body{
 .description{
      margin-bottom: 0;
      font-weight: 600;
-     font-size: 16px;
+     font-size: 18px;
 }
 .content{
      display: inline-block;
@@ -77,9 +77,12 @@ body{
      width: 40%;
      font-size: 16px !important;
 }
+.container-for-aboutme{
+     text-align: center;
+}
 
 /* Work Experience Styles */
-.container-for-workexperience{
+.container-for-careergoals{
      overflow: auto;
 }
 
@@ -94,7 +97,7 @@ body{
      z-index: 1;
 }
 .container-for-skills:before{
-     background-image: linear-gradient(rgba(226, 226, 208, 0.3), rgba(226, 226, 208, 0.5)), url("../images/ImagesForWorkExperience/mountain_forest_dark_enhanced.jpg") !important;
+     background-image: url("../images/ImagesForWorkExperience/mountain_forest_dark_enhanced.jpg") !important;
      content: "";
      position: absolute;
      background: inherit;
@@ -106,11 +109,27 @@ body{
      z-index: -1;
 }
 .myskills-title{
-     color: #fff5e6;
+     color: #fff2e6;
 }
 .myskills-desc{
-     font-size: 16px;
-     color: #fff5e6;
+     color: #fff2e6;
+     font-size: 18px;
+     font-weight: bold;
+}
+.skills{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     width: 25%;
+     height: 250px;
+}
+.skills.two{
+     margin: 0 35px;
+}
+.skills h3{
+     margin-bottom: 25px;
 }
 
 
