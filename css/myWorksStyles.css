@@ -137,17 +137,27 @@
 }
 
 /* Entrepreneurship Styles */
-#entrepreneurship{
+#appdev{
     background-image: url('../images/ImagesForWorkExperience/photo-of-audi-parked-near-trees-1402787.jpg') !important;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
-
-.entrepreneurship-title, .entrepreneurship-desc{
+.appdev-title, .appdev-desc{
     color: #F4F4ED;
 }
-
+.appdev-image{
+    width: 100%;
+    height: 90%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-image: url('../images/ImagesForWorkExperience/BMC.png') !important;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.appdev-content{
+    padding: 0 50px;
+}
 
 /* Images Used */
 /* Starry sky night trees night landscape -> https://wallpaperscraft.com/wallpaper/starry_sky_night_trees_night_landscape_118760
