@@ -12,9 +12,8 @@
     </head>
     <body id="full_content" class="custom-scrollbar">
         <nav class="d-flex flex-row-reverse">
+            <a class="btn btn-secondary bg-transparent rounded-sm" href="myresume.html">Contact Me</a>
             <a class="btn btn-secondary bg-transparent rounded-sm" href="myworks.html">My Works</a>
-            <a class="btn btn-secondary bg-transparent rounded-sm" href="mynewskillssplashpage.html">Developed Skills</a>
-            <a class="btn btn-secondary bg-transparent rounded-sm" href="mycareergoals.html">Career Goals</a>
             <a class="btn btn-secondary bg-transparent rounded-sm" href="myresume.html">My Resume</a>
         </nav>
         <div class="container-content d-flex flex-column justify-content-center align-items-center">
@@ -33,9 +32,9 @@
                 <h2 class="aboutme-title" 
                 data-aos="fade-up" 
                 data-aos-anchor-placement="center-bottom"
-                data-aos-duration="800">About Me</h2>
+                data-aos-duration="1000">About Me</h2>
                 
-                <p class="aboutmedescription" data-aos="fade-up" data-aos-duration="1400">
+                <p class="aboutmedescription" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1500">
                     Hello there! My name is Brennan. I am a student at Nova Scotia Community College currently completing courses in the I.T Programming strain. 
                     I specialize in creating backend structures that focus on functionality, speed, and efficiency. Outside of school, I spend my time playing videogames, playing guitar, and learning new trending programming languages.  
                 </p>
@@ -89,8 +88,15 @@
             </div>
         </section>
         <div class="container-for-careergoals d-flex flex-column justify-content-center align-items-center container-details">
-            <h3>Career Goals</h3>
+            <h1 class="careergoals-title">Career Goals</h3>
+            <p class="careergoals-desc">What do I want to do in my career?</p>
         </div>
+        <div class="careergoals-content container-details">
+            <h1>Hello There</h1>
+            <p>Lorem Ipsum</p>
+        </div>
+
+        <!-- Adding the JS for the animations plugin -->
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
         <script>
             AOS.init({duration: 500});
