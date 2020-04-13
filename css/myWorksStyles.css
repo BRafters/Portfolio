@@ -8,16 +8,17 @@
     margin-top: 50px;
 }
 .containers{
-    height: calc(50vh - 50px);
+    height: 50vh;
 }
 .works{
-    width: 15%;
+    width: 17%;
     text-align: center;
     margin: 25px 25px 0 25px;
 }
 .works p{
     height: 50px;
 }
+
 .btn-primary{
     transition: background 0.2s ease, color 0.2s ease !important;
     border: 2px solid black !important;
@@ -26,6 +27,35 @@
     background: white !important;
     color: black !important;
 }
+
+/* Javascript Container Styles */
+.javascript{
+    background-image: url('../images/ImagesForWorkExperience/space_stars_milky_way_166418_3351x2233.jpg') !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.javascript-title, .javascript-desc{
+    color: white;
+}
+.left-col-one{
+    width: 30%;
+}
+.right-col-one{
+    width: 60%;
+}
+.content{
+    width: 80%;
+    height: 90%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-image: url("../images/ImagesForWorkExperience/Blackjack.png") !important;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+
 /* Images Used */
-/* starry sky night trees night landscape -> https://wallpaperscraft.com/wallpaper/starry_sky_night_trees_night_landscape_118760
+/* Starry sky night trees night landscape -> https://wallpaperscraft.com/wallpaper/starry_sky_night_trees_night_landscape_118760
 Unknown author */
+
+/* Space stars milky way -> https://wallpaperscraft.com/wallpaper/space_stars_milky_way_166418 -> Hypatia Alexandria */
