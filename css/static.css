@@ -26,7 +26,6 @@ p{
 .btn-secondary{
      transition: border-bottom 0.2s ease, color 0.2s ease !important;
      margin-left: 5px;
-     font-size: 14px;
      color: white !important; 
      height: 50px !important;
 }

@@ -1,0 +1,12 @@
+.contact-container{
+     height: 100vh;
+     width: 90%;
+     margin: 0 auto;
+}
+
+.contact{
+     width: 60%;
+}
+.btn-info{
+     width: 300px;
+}
