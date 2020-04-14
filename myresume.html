@@ -4,45 +4,39 @@
         <meta charset='utf-8'>
         <meta http-equiv='X-UA-Compatible' content='IE=edge'>
         <title>Brennan Rafters | My Resume</title>
-        <link href="https://fonts.googleapis.com/css?family=Lobster|Signika:400,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/lux/bootstrap.min.css">
         <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <link rel='stylesheet' type='text/css' media='screen' href='css/myresumestyles.css'>
+        <link rel='stylesheet' href='css/static.css'>
+        <link rel='stylesheet' href="css/myresumestyles.css">
     </head>
     <header>
-        <nav>
-            <a href="myworks.html">My Works</a>
-            <a href="myresume.html">My Resume</a>
-            <a href="myresume.html">Home</a>
+        <nav class="d-flex flex-row-reverse justify-content-center">
+            <a class="btn btn-secondary bg-transparent" href="myworks.html">My Works</a>
+            <a class="btn btn-secondary bg-transparent" href="myresume.html">My Resume</a>
+            <a class="btn btn-secondary bg-transparent" href="myresume.html">Home</a>
         </nav>
     </header>
     <body>
-        <div class="Content">
-            <h2>Brennan Rafters</h2>
-            <div class="content-info">
-                <a class="contact" href="mailto:brennanrafters@gmail.com">brennanrafters@gmail.com</a>
-                <a class="contact" href="#">(902)-240-3454</a>
-            </div>
-            <div class="objective">
-                <h3 class="my-objective">My Objective</h3>
-                <p class="desc">
-                    To obtain a co-op software development position that promotes growth in an environment that I can expand my 
-                    creative thinking, problem solving, and leadership qualities to continue to develop my experience in a positive and 
-                    professional community. 
-                </p>
-            </div>
-            <div class=edu">
-                <h3 class="education-header">Education and Professional Development</h3>
-                <div class="school line one">
-                    <h4 class="wide-col one">Nova Scotia Community College</h4>
-                    <h4 class="narrow-col one">Halifax, NS</h4>
-                    <h4 class="wide-col two">I.T Programming</h4>
-                    <h4 class="narrow-col two">Anticipated June 2020</h4>
-                </div>
-                <div class="school line one">
-                    <h4 class="wide-col one">Sir John A. MacDonald High School</h4>
-                    <h4 class="narrow-col one">Halifax, NS</h4>
-                    <h4 class="wide-col two">High School Diploma</h4>
-                    <h4 class="narrow-col two">Sept 2014 - June 2017</h4>
+        <div class="resume-container d-flex flex-column justify-content-center align-items-center">
+            <div class="content d-flex flex-column justify-content-center">
+                <section class="header">
+                    <h2 class="name">Brennan Rafters</h2>
+                    <a class="btn btn-secondary bodybtn" href="mailto:brennanrafters@gmail.com">brennanrafters@gmail.com</a>
+                    <a class="btn btn-secondary bodybtn" href="tel:+19022403454">(902)-240-3454</a>
+                </section>
+                <div class="resume-body d-flex flex-row justify-content-center align-items-center">
+                    <section class="resume-body-content objective">
+                        <h2>My Objective</h2>
+                        <p>
+                            To obtain a co-op software development position that promotes growth in an environment 
+                            that I can expand my creative thinking, problem solving, and leadership qualities to 
+                            continue to develop my experience in a positive and professional community. 
+                        </p>
+                    </section>
+                    <section class="resume-body-content skills">
+                        <h2>Skills</h2>
+                        <p></p>
+                    </section>
                 </div>
             </div>
         </div>

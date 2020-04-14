@@ -28,6 +28,7 @@ p{
      margin-left: 5px;
      font-size: 14px;
      color: white !important; 
+     height: 50px !important;
 }
 .btn-secondary:hover{
      border-bottom: 5px solid white !important;
