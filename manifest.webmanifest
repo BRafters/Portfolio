@@ -1,0 +1,9 @@
+{
+    "name": "Brennan Rafters - E-Portfolio",
+    "short_name": "BRaftersEPortfolio",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#eee5e9",
+    "theme_color": "#eee5e9",
+    "orientation": "portrait-primary"
+}
