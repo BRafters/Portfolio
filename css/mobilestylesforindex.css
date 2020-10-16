@@ -1,0 +1,74 @@
+@media only screen and (max-width: 1470px){
+    h3{
+        font-size: 20px !important;
+    }
+    p{
+        font-size: 14px;
+    }
+
+}
+
+@media only screen and (max-width: 1170px){
+    h3{
+        font-size: 18px !important;
+        font-weight: bold !important;
+    }
+    p{
+        font-size: 14px;
+    }
+    .careergoals.one, .skills.one, .lifegoals.one{
+        margin-left: 5px !important;
+    }
+    .careergoals.three, .skills.three, .lifegoals.three{
+        margin-right: 5px !important;
+    }
+    .careergoals, .skills, .lifegoals{
+        width: 30%;
+    }
+}
+@media only screen and (max-width: 1100px){
+    .title{
+        font-size: 2.0em !important;
+    }
+    .description{
+        font-size: 1.0em !important;
+    }
+}
+
+@media only screen and (max-width: 1075px){
+    h3{
+        font-size: 16px !important;
+    }
+}
+
+@media only screen and (max-width: 1030px){
+    p{
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 830px){
+
+    h3{
+        
+    }
+    .myskills-content, .careergoals-content, .lifegoals-content{
+        flex-direction: column !important;
+        height: auto;
+    }
+    .careergoals, .skills, .lifegoals{
+        margin: 25px 0;
+        padding: 15px 0;
+        width: 50%;
+    }
+    .careergoals.two, .skills.two, .lifegoals.two{
+        margin: 0px !important;
+    }
+    .lifegoals{
+        text-align: center;
+    }
+    .aboutmedescription{
+        width: 80%;
+    }
+
+}
