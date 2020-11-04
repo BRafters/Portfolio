@@ -1,0 +1,133 @@
+/* Mobile styling for the myWorks page */
+@media only screen and (max-width: 1680px){
+    .left-col-one{
+        width: 400px;
+        height: 350px;
+        background-size: cover;
+    }
+}
+
+@media only screen and (max-width: 1425px){
+    .works h2{
+        font-size: 1.3em;
+    }
+}
+
+@media only screen and (max-width: 1050px){
+    .works h2{
+        font-size: 1.2em;
+    }
+    .works p{
+        font-size: 0.9em;
+    }
+    .button{
+        padding: 10px 15px;
+    }
+}
+@media only screen and (max-width: 975px){
+    .works{
+        width: 23%;
+    }
+}
+@media only screen and (max-width: 860px){
+    .works h2{
+        font-size: 1.0em;
+    }
+    .works p{
+        font-size: 0.8;
+    }
+    .right-col-one{
+        padding-left: 0;
+    }
+}
+
+@media only screen and (max-width: 750px){
+    .containers.js, .containers.cpp, .containers.app{
+        height: 30vh;
+    }
+    .containers.cap{
+        height: auto;
+    }
+    .right-col-one{
+        padding-right: 20px;
+        height: auto;
+    }
+    .right-col-one p{
+        font-size: 0.8em;
+    }
+    .left-col-one{
+        width: 200px;
+        height: 250px;
+        padding: 0;
+        margin: 0 50px;
+    }
+    .works:nth-of-type(2), .works:nth-of-type(3){
+        margin: 25px;
+    }
+    .works{
+        height: 150px;
+        width: 100%;
+        margin: 25px;
+    }
+    .works h2{
+        font-size: 1.7em;
+        margin-top: 0;
+    }
+    .works p{
+        height: auto;
+        font-size: 1em;
+    }
+    .button{
+        display: inline-block;
+    }
+    .capstone-content .right-col-one{
+        padding-right: 10px;
+    }
+    #selection{
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+    }
+}
+
+@media only screen and (max-width: 560px){
+    .right-col-one h3{
+        font-size: .9em;
+        margin-bottom: 0;
+    }
+    .right-col-one p{
+        font-size: 0.7em;
+    }
+}
+
+@media only screen and (max-width: 530px){
+    .containers.app, .containers.cap, .containers.cpp, .containers.js, .containers.mmw{
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        margin: 75px;
+    }
+    .left-col-one{
+        float: left;
+        clear: both;
+    }
+    .left-col-one{
+        width: 300px;
+        height: 350px;
+    }
+    .right-col-one{
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+    .right-col-one p{
+        font-size: 0.9em;
+    }
+    .right-col-one h3{
+        font-size: 1.2em;
+    }
+}

@@ -1,31 +1,68 @@
+/* General Styles */
+h2{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
 /* Container Styles */
+#javascript, #capstone, #cpp, #appdev{
+    flex-direction: column;
+}
 .container-content{
-    background-image: url('../images/ImagesForWorkExperience/starry_sky_night_trees_night_landscape_118760_7952x5304.jpg') !important;
+    background-image: url('../images/ImagesForWorkExperience/leaves.jpg') !important;
     height: 50vh !important;
+    display: flex;
+    flex-direction: column;
 }
 .container-content h1{
-    color: #F4F4ED;
+    color: #EAF6FF;
     margin-top: 50px;
+    margin-bottom: 0;
+}
+.container-content h4{
+    color: #EAF6FF;
+    
 }
 .containers{
     height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .works{
-    width: 17%;
+    width: 20%;
     text-align: center;
-    margin: 25px 25px 0 25px;
+}
+.works:nth-of-type(2), .works:nth-of-type(3){
+    margin: 0 25px 0 25px;
+}
+.works:nth-of-type(2){
+    margin-right: 0;
 }
 .works p{
-    height: 50px;
+    height: 75px;
 }
 
-.btn-primary{
-    transition: background 0.2s ease, color 0.2s ease !important;
-    border: 2px solid black !important;
+.button{
+    background-color: black;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #EAF6FF;
+    padding: 15px 20px;
+    border-radius: 2px;
+    transition: background 0.2s ease, color 0.2s ease;
+    border: 2px solid black;
 }
-.btn-primary:hover{
-    background: white !important;
-    color: black !important;
+.button:hover{
+    background: #EAF6FF;
+    color: black;
+}
+
+/* Header Styles */
+.javascript-title, .cpp-title, .capstone-title, .appdev-title{
+    margin-bottom: 0;
 }
 
 /* Javascript Container Styles */
@@ -42,10 +79,18 @@
     width: 30%;
 }
 .right-col-one{
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    flex-direction: column;
     width: 60%;
 }
 .javascript-content{
     padding: 0 50px;
+}
+.right-col-one > h3{
+    display: block !important;
+    width:  100%;
 }
 .js-image{
     width: 100%;
@@ -180,9 +225,57 @@
     padding: 0 50px;
 }
 
+/* Styles for other projects */
+#otherProjects{
+    flex-direction: column;
+    background-image: url('../images/ImagesForWorkExperience/ingmar-mkNkGXMR4zc-unsplash.jpg') !important;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.otherProjectsHeader{
+    margin-bottom: 0;
+}
+
+.mmw-content{
+    padding: 0 50px;
+}
+
+.otherProjectsHeader, .other-desc{
+    color: #EAF6FF;
+}
+.mmw-image.one{
+    background-color: #253319;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-image: url('../images/ImagesForWorkExperience/mmwMain.png') !important;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: 90%;
+}
+.mmw-image.two{
+    background-color: #0099ff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-image: url('../images/ImagesForWorkExperience/map_weather.png') !important;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: 90%;
+}
+.button.site{
+    display: block;
+    width: 100%;
+}
+
+
+
 /* Images Used */
 /* Starry sky night trees night landscape -> https://wallpaperscraft.com/wallpaper/starry_sky_night_trees_night_landscape_118760
 Unknown author */
+
+/* Leaves Photo by Arun Clarke on Unsplash https://unsplash.com/photos/dhf9Z6-9pqA */
 
 /* Building photo by Miguel Bruna on Unsplash */
 
@@ -192,3 +285,5 @@ Unknown author */
 */
 
 /* Space stars milky way -> https://wallpaperscraft.com/wallpaper/space_stars_milky_way_166418 -> Hypatia Alexandria */
+
+/* Leave photos by -> Ingmar "https://unsplash.com/t/nature?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" */

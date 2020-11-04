@@ -4,6 +4,15 @@ body{
      animation: 1s ease-out 0s 1 slideInFromLeft !important;
      scroll-behavior: smooth !important;
 }
+h3{
+     font-size: 1.4rem;
+     text-transform: uppercase;
+}
+
+
+.myskills-title, .lifegoals-title, .aboutme-title, .careergoals-title{
+     text-transform: uppercase;
+}
 
 /* Middle Div Content Styles */
 .myskills-content, .careergoals-content, .lifegoals-content{
@@ -14,54 +23,53 @@ body{
 }
 .title{
      font-size: 2.5em;
+     margin-top: 0;
+     margin-bottom: 10px;
+     color:#EAF6FF;
 }
 .description{
      margin-bottom: 0;
-     font-weight: 600;
+     margin-top: 0;
      font-size: 18px;
+     color: #EAF6FF;
 }
 .content{
      display: inline-block;
-     padding-right: 45px;
-     width: 70%;
+     text-align: center;
+     margin-top: 45px;
 }
 .profile-picture-s{
      display: inline-block;
 }
 .picture{
      display: inline-block;
-     height: 300px;
      width: 300px;
      border-radius: 50%;
      background-size: cover;
+     -webkit-box-shadow: 0px 0px 7px 4px rgba(0,0,0,0.3); 
+     box-shadow: 0px 0px 7px 4px rgba(0,0,0,0.3);
 }
-
 .details{
-     position: relative;
-     background: rgba(238, 229, 233, 0.85);
-     height: 425px;
-     width: 60vw;
-     border-radius: 10px;
-     padding: 60px !important;
-     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-     background: inherit;
-     overflow: hidden;
-     z-index: 1;
-     animation: 1s ease-out 0s 1 slideinfromleft;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column-reverse;
 }
-
 .details:before{
-     content: "";
+     content: '';
      position: absolute;
-     background: inherit;
      top: 0;
      right: 0;
-     bottom: 0;
+     bottom:0;
      left: 0;
-     box-shadow: inset 0 0 2000px rgba(255,255,255, 0.8);
-     filter: blur(15px);
-     z-index: -1;
+     width: 100%;
+     height: 100vh;
+     box-shadow: inset 0 0 20000px rgba(0,0,0, 1);
+     background:inherit;
+     overflow: hidden;
+     /* filter: blur(5px); */
 }
+
 
 /* All Content Container Styles */
 .container-details{
@@ -71,13 +79,21 @@ body{
 /* About Me Styles */
 .aboutme-title{
      margin-bottom: 20px;
+     font-size: 2em;
+     margin-top: 0;
 }
 .aboutmedescription{
+     margin-top: 0;
      width: 40%;
      font-size: 17px !important;
 }
-.container-for-aboutme{
+.container-for-aboutme, .container-for-skills, .container-for-careergoals, .container-for-lifegoals{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
      text-align: center;
+     height: 350px;
 }
 
 /* Career Goals Styles */
@@ -105,7 +121,11 @@ body{
 .careergoals-title, .careergoals-desc{
      color: #eeffcc;
 }
+.careergoals-title{
+     margin-top: 0;
+}
 .careergoals-desc{
+     margin-top: 0;
      font-size: 18px;
 }
 .careergoals{
@@ -142,11 +162,14 @@ body{
 }
 .myskills-title{
      color: #fff2e6;
+     font-size: 2em;
+     margin-top: 0;
+     margin-bottom: 20px;
 }
 .myskills-desc{
      color: #fff2e6;
      font-size: 18px;
-     font-weight: bold;
+     margin-top: 0;
 }
 .skills{
      display: flex;
@@ -188,12 +211,16 @@ body{
 .lifegoals-title, .lifegoals-desc{
      color: #F4F4ED;
 }
+.lifegoals-title{
+     margin-top: 0;
+}
 .lifegoals-desc{
      font-size: 18px;
      margin: 0;
 }
 .lifegoals{
      width: 25%;
+     text-align: center;
 }
 .lifegoals.two{
      margin: 0 45px;

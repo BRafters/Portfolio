@@ -5,10 +5,13 @@
         <link rel="stylesheet" href="css/static.css">
         <link rel="stylesheet" href="css/mobilestylesforindex.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/lux/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap" rel="stylesheet">  
+        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/lux/bootstrap.min.css"> -->
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <title>Brennan Rafters | Portfolio</title>
 
+        <!-- Linking in Icons -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> 
+        <title>Brennan Rafters | Portfolio</title>
         <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="manifest" type="application/manifest+json" href="/manifest.webmanifest">
@@ -18,13 +21,39 @@
     </head>
     
     <body id="full_content" class="custom-scrollbar">
-        <nav class="d-flex flex-row-reverse justify-content-center ">
-            <a class="btn btn-secondary bg-transparent" href="myresume.html">Contact Me</a>
-            <a class="btn btn-secondary bg-transparent" href="myworks.html">My Works</a>
-            <a class="btn btn-secondary bg-transparent" href="myresume.html">My Resume</a>
+        <nav>
+            <a class="links" href="index.html">Home</a>
+            <a class="links" href="myworks.html">My Works</a>
+            <a class="links" href="contactme.html">Contact Me</a>
+            <a class="links" href="myresume.html">My Resume</a>
         </nav>
-        <div class="container-content d-flex flex-column justify-content-center align-items-center">
-            <div class="details d-flex flex-row justify-content-center align-items-center">
+        
+        <!-- Container for the menu navbar -->
+        <div class="menu-container">
+            <input type="checkbox" class="toggler"/>
+            <span class="hamburger">
+                <div></div>
+            </span>
+            <div class="overlay"></div>
+            <div class="menu">
+                <div>
+                    <div>
+                        <ul>
+                            <li>
+                                <a class="mobileLinks" href="index.html"><span class="material-icons icon">home</span>Home</a>
+                                <a class="mobileLinks" href="myworks.html"><span class="material-icons icon">code</span>My Works</a>
+                                <a class="mobileLinks" href="contactme.html"><span class="material-icons icon">contact_page</span>Contact Me</a>
+                                <a class="mobileLinks" href="myresume.html"><span class="material-icons icon">text_snippet</span>My Resume</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Title Container -->
+        <div class="container-content">
+            <div class="details">
                 <div class="content">
                     <h1 class="title">Brennan Rafters</h1>
                     <p class="description">I.T Programming graduate from Nova Scotia Community College</p>
@@ -35,7 +64,7 @@
             </div>
         </div>
         <section>
-            <div class="container-for-aboutme d-flex flex-column justify-content-center align-items-center container-details">
+            <div class="container-for-aboutme">
                 <h2 class="aboutme-title" 
                 data-aos="fade-up" 
                 data-aos-anchor-placement="center-bottom"
@@ -48,7 +77,7 @@
             </div>
 
             <!-- Skills -->
-            <div class="container-for-skills d-flex flex-column justify-content-center align-items-center container-details">
+            <div class="container-for-skills">
                 <h1 class="myskills-title">My Skills</h1>
                 <p class="myskills-desc">Here are my top three skills that I have developed in my time at NSCC!</p>
             </div>
@@ -96,7 +125,7 @@
                 </section>
             </div>
         </section>
-        <div class="container-for-careergoals d-flex flex-column justify-content-center align-items-center container-details">
+        <div class="container-for-careergoals">
             <h1 class="careergoals-title">Career Goals</h3>
             <p class="careergoals-desc">What do I want to do in my career?</p>
         </div>
@@ -147,7 +176,7 @@
         </div>
 
         <!-- Life Goals -->
-        <div class="container-for-lifegoals container-details d-flex flex-column justify-content-center align-items-center">
+        <div class="container-for-lifegoals">
             <h1 class="lifegoals-title">My Life Goals</h1>
             <p class="lifegoals-desc">Where am I now? Where am I going? How will I get there?</p>
         </div>
@@ -174,7 +203,7 @@
                     attention to detail, and programming skills and offers new challenge and opportunities to better hone my skills.
                 </p>
                 <p>
-                    Attending classes at Saint Mary's University (part time) with a goal of obtaining a degree in entrepreneurship.
+                    Going through PMI with the aspiration to acquire a CAPM project management certification.
                 </p>
             </section>
             <section class="lifegoals three"
@@ -193,6 +222,8 @@
         </div>
         
         <script src='/js/app.js'></script>
+        <script src='/js/buttonEvents.js'></script>
+
         <!-- Adding the JS for the animations plugin -->
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
         <script>

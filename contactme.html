@@ -1,38 +1,69 @@
 <html lang="en">
     <head>
-        <meta charset='utf-8'>
-        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-        <title>Brennan Rafters | My Resume</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/lux/bootstrap.min.css">
-        <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <link rel='stylesheet' href='css/static.css'>
-        <link rel='stylesheet' href="css/myresumestyles.css">
-        <link rel='stylesheet' href="css/contactstyles.css">
+     <meta charset="UTF-8">
+     <title>Brennan Rafters | Contact Me</title>
+     <link rel="stylesheet" href="css/static.css">
+     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap" rel="stylesheet">  
+     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+     <link rel="stylesheet" href="css/contactstyles.css">
+     <link rel="stylesheet" href="css/contactmobilestyles.css">
+
+     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="manifest" type="application/manifest+json" href="/manifest.webmanifest">
+     <link rel="apple-touch-icon" href="">
+     <meta name="apple-mobile-web-app-status-bar" content="#000000">
+     <meta name="theme-color" content="#000000">
     </head>
-    <header>
-        <nav class="d-flex flex-row-reverse justify-content-center">
-            <a class="btn btn-secondary bg-transparent" href="myworks.html">My Works</a>
-            <a class="btn btn-secondary bg-transparent" href="myresume.html">Contact Me</a>
-            <a class="btn btn-secondary bg-transparent" href="index.html">Home</a>
-        </nav>
-    </header>
     <body>
-          <div class="contact-container d-flex flex-column justify-content-center align-items-center">
+          <nav>
+               <a class="links" href="index.html">Home</a>
+               <a class="links" href="myworks.html">My Works</a>
+               <a class="links" href="contactme.html">Contact Me</a>
+               <a class="links" href="myresume.html">My Resume</a>
+          </nav>
+
+          <!-- Container for the menu navbar -->
+          <div class="menu-container">
+               <input type="checkbox" class="toggler"/>
+               <span class="hamburger">
+               <div></div>
+               </span>
+          <div class="overlay"></div>
+          <div class="menu">
+          <div>
+               <div>
+                    <ul>
+                         <li>
+                              <a class="mobileLinks" href="index.html"><span class="material-icons icon">home</span>Home</a>
+                              <a class="mobileLinks" href="myworks.html"><span class="material-icons icon">code</span>My Works</a>
+                              <a class="mobileLinks" href="contactme.html"><span class="material-icons icon">contact_page</span>Contact Me</a>
+                              <a class="mobileLinks" href="myresume.html"><span class="material-icons icon">text_snippet</span>My Resume</a>
+                         </li>
+                    </ul>
+               </div>
+          </div>
+          </div>
+          </div>
+          <div class="contact-container">
                <h1>Contact Me</h1>
-               <div class="contact d-flex flex-row justify-content-center align-items-center">          
-                    <div class="d-flex flex-column justify-content-center align-items-center">
+               <div class="contact">
+
+                    <div class="contactMe">
                          <h4>Email</h4>
-                         <a class="btn btn-info" href="mailto:brennanrafters@gmail.com">brennanrafters@gmail.com</a>
+                         <a class="button" href="mailto:brennanrafters@gmail.com">brennanrafters@gmail.com</a>
                     </div>
-                    <div class="d-flex flex-column justify-content-center align-items-center" style="margin: 0 10px 0 10px;">
+                    <div class="contactMe">
                          <h4>Phone</h4>
-                         <a class="btn btn-info" href="tel:+19022403454">(902)-240-3454</a>
+                         <a class="button" href="tel:+19022403454">(902)-240-3454</a>
                     </div>
-                    <div class="d-flex flex-column justify-content-center align-items-center">
+                    <div class="contactMe">
                          <h4>Linkedin</h4>
-                         <a class="btn btn-info" href="https://www.linkedin.com/in/brennan-rafters/">My Linkedin Profile</a>
+                         <a class="button" href="https://www.linkedin.com/in/brennan-rafters/">My Linkedin Profile</a>
                     </div>
                </div>
           </div>
+
+          <script src="js/buttonEvents.js"></script>
     </body>
 </html>    
