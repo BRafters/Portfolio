@@ -1,5 +1,5 @@
 body{
-     background-color: #EAF6FF;
+     background-color: #e3dac9;
 }
 .contact-container{
      height: 100vh;
@@ -9,6 +9,10 @@ body{
      justify-content: center;
      align-items: center;
      flex-direction: column;
+}
+.contact-container h1{
+     font-family: 'Playfair Display', serif;
+     text-transform: uppercase;
 }
 .contact{
      display: flex;
@@ -24,18 +28,18 @@ body{
 }
 .button{
      text-decoration: none;
-     color: #EAF6FF;
+     color: #e3dac9;
      padding: 15px 20px;
-     background-color: #000000;
+     background-color: #645e4f;
      display: inline-block;
      font-weight: bold;
      width: 300px;
      transition: color 0.2s ease, background-color 0.3s ease;
-     border: 2px solid #000000;
+     border: 2px solid#645e4f;
 }
 .button:hover{
-     background: #EAF6FF;
-     color: #000000;
+     background: #e3dac9;
+     color: #645e4f;
      box-shadow: none;
 }
 

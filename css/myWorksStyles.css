@@ -10,17 +10,23 @@ h2{
 }
 .container-content{
     background-image: url('../images/ImagesForWorkExperience/leaves.jpg') !important;
+    background-position: center;
+    background-size: cover !important;
     height: 50vh !important;
+    position: relative;
+    top: 53px;
     display: flex;
     flex-direction: column;
 }
 .container-content h1{
-    color: #EAF6FF;
-    margin-top: 50px;
+    color: #e3dac9;
+    /* margin-top: 50px; */
     margin-bottom: 0;
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
 }
 .container-content h4{
-    color: #EAF6FF;
+    color: #e3dac9;
     
 }
 .containers{
@@ -28,6 +34,7 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #e3dac9;
 }
 .works{
     width: 20%;
@@ -42,9 +49,12 @@ h2{
 .works p{
     height: 75px;
 }
+.works h2{
+    font-family: "Playfair Display", cursive;
+}
 
 .button{
-    background-color: black;
+    background-color: #645e4f;
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
@@ -53,27 +63,30 @@ h2{
     padding: 15px 20px;
     border-radius: 2px;
     transition: background 0.2s ease, color 0.2s ease;
-    border: 2px solid black;
+    border: 2px solid #645e4f;
 }
 .button:hover{
-    background: #EAF6FF;
-    color: black;
+    background: #e3dac9;
+    color: #645e4f;
 }
 
 /* Header Styles */
-.javascript-title, .cpp-title, .capstone-title, .appdev-title{
+.javascript-title, .cpp-title, .capstone-title, .appdev-title, .otherProjectsHeader{
     margin-bottom: 0;
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
 }
 
 /* Javascript Container Styles */
 #javascript{
-    background-image: url('../images/ImagesForWorkExperience/space_stars_milky_way_166418_3351x2233.jpg') !important;
+    background-image: url('../images/ImagesForWorkExperience/nathandumlao.jpg') !important;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     background-attachment: fixed;
 }
 .javascript-title, .javascript-desc{
-    color: #F4F4ED;
+    color: #e3dac9;
 }
 .left-col-one{
     width: 30%;
@@ -91,6 +104,7 @@ h2{
 .right-col-one > h3{
     display: block !important;
     width:  100%;
+    font-family: "Playfair Display", cursive;
 }
 .js-image{
     width: 100%;
@@ -116,13 +130,14 @@ h2{
 
 /* Capstone Styles */
 #capstone{
-    background-image: url('../images/ImagesForWorkExperience/miguel-bruna-DdiaNwoCK0c-unsplash.jpg') !important;
+    background-image: url('../images/ImagesForWorkExperience/City.jpg') !important;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    background-position: center;
 }
 .capstone-title, .capstone-desc{
-    color: #F4F4ED;
+    color: #e3dac9;
 }
 .capstone-image{
     width: 100%;
@@ -142,13 +157,13 @@ h2{
 
 /* C++ Styles */
 #cpp{
-    background-image: url('../images/ImagesForWorkExperience/massimiliano-morosinotto-uJIhAvqFJxg-unsplash.jpg') !important;
+    background-image: url('../images/ImagesForWorkExperience/ClayBanks.jpg') !important;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
 .cpp-title, .cpp-desc{
-    color: #F4F4ED;
+    color: #e3dac9;
 }
 .cpp-content{
     padding: 0 50px;
@@ -158,6 +173,7 @@ h2{
     height: 90%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-image: url('../images/ImagesForWorkExperience/Maze.png') !important;
+    background-color: #ffffff;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -183,13 +199,13 @@ h2{
 
 /* Entrepreneurship Styles */
 #appdev{
-    background-image: url('../images/ImagesForWorkExperience/photo-of-audi-parked-near-trees-1402787.jpg') !important;
+    background-image: url('../images/ImagesForWorkExperience/jeremyBishop.jpg') !important;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
 .appdev-title, .appdev-desc{
-    color: #F4F4ED;
+    color: #e3dac9;
 }
 .appdev-image{
     width: 100%;
@@ -228,7 +244,7 @@ h2{
 /* Styles for other projects */
 #otherProjects{
     flex-direction: column;
-    background-image: url('../images/ImagesForWorkExperience/ingmar-mkNkGXMR4zc-unsplash.jpg') !important;
+    background-image: url('../images/ImagesForWorkExperience/AndrewNeel.jpg') !important;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -242,7 +258,7 @@ h2{
 }
 
 .otherProjectsHeader, .other-desc{
-    color: #EAF6FF;
+    color: #e3dac9;
 }
 .mmw-image.one{
     background-color: #253319;
@@ -277,13 +293,11 @@ Unknown author */
 
 /* Leaves Photo by Arun Clarke on Unsplash https://unsplash.com/photos/dhf9Z6-9pqA */
 
-/* Building photo by Miguel Bruna on Unsplash */
+/* City photo by Adam Borkowski on Unsplash */
 
-/* 
-    Dusk mountains Photo by Massimiliano Morosinotto on Unsplash 
-    https://unsplash.com/photos/uJIhAvqFJxg
-*/
+/* Mountains hoto by Clay Banks on Unsplash */
 
-/* Space stars milky way -> https://wallpaperscraft.com/wallpaper/space_stars_milky_way_166418 -> Hypatia Alexandria */
+/* Leaves Photo by Andrew Neel on Unsplash */
 
-/* Leave photos by -> Ingmar "https://unsplash.com/t/nature?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" */
+/* Dunes photo by Photo by Jeremy Bishop on Unsplash */
+
