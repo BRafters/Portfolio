@@ -1,0 +1,239 @@
+@media only screen and (max-width: 1360px){
+
+    /* Containers */
+    .resume-container{
+        /* position: static; */
+        width: 94%;
+        height: 92%;
+    }
+
+    /* Name Title */
+    .nameTitle{
+        height: 15%;
+    }
+    .nameTitle h1{
+        font-size: 1.3em;
+    }
+    .nameTitle h5{
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    /* Contact */
+    .contactInfo h4, .contactInfo a{
+        padding: 7px 0;
+        font-size: 13px !important;
+    }
+    .material-icons{
+        font-size: 18px !important;
+        /* margin-right: 20px !important; */
+    }
+
+    /* Skills */
+    .skillsInfo span{
+        padding: 2px 6px;
+        font-size: 14px;
+    }
+    .skillsInfo h3{
+        font-size: 1.25em;
+    }
+
+    /* Photo */
+    .resume-photo{
+        height: 150px;
+    }
+
+    /* Objective Description */
+    .obj-desc h2{
+        font-size: 1.3em;
+    }
+    .obj-desc p{
+        font-size: 13px;
+    }
+
+    /* Education */
+    .educationInfo h4{
+        font-size: 0.9em;
+    }
+    .educationInfo h5{
+        font-size: 13px;
+    }
+    .educationInfo h3{
+        font-size: 1.25em;
+    }
+
+    /* Experience */
+    .experience h2, .volunteer h2{
+        font-size: 1.3em;
+    }
+    .experience h4, .volunteer h4{
+        font-size: 0.9em;
+    }
+    .experience ul li, .volunteer ul li{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 1040px){
+    /* Name Title */
+    .nameTitle h1{
+        font-size: 0.95em;
+    }
+    .nameTitle h5{
+        font-size: 11px;
+    }
+}
+
+@media only screen and (max-width: 950px){
+    
+    /* General */
+    .educationInfo h3, .skillsInfo h3{
+        font-size: 1.0em;
+    }
+    
+    /* .contactInfo */
+    .contactInfo h4, .contactInfo a{
+        font-size: 11px !important;
+    }
+
+    /* .educationInfo */
+    .educationInfo h5{
+        font-size: 11px;
+    }
+    .educationInfo h4{
+        font-size: 0.83em;
+    }
+
+    /* .skillsInfo */
+    .skillsInfo span{
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .container{
+        flex-direction: column;
+    }
+    .resume-container{
+        overflow: auto;
+        height: 97%;
+    }
+    .left-column, .right-column{
+        float: none;
+        width: 100%;
+    }
+    .right-column{
+        overflow: auto;
+        height: auto;
+    }
+    .left-column{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+    .contactInfo{
+        flex-direction: row;
+        width: 100%;
+    }
+    .skillsInfo{
+        display: inline-block;
+        width: 70%;
+        padding: 10px;
+        height: 220px;
+    }
+    .skillsInfo h3{
+        margin-bottom: 25px;
+    }
+    .educationInfo{
+        display: inline-block;
+        border:  none;
+        height: 220px;
+    }
+    .eduSkillInfo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .nameTitle{
+        padding: 10px;
+    }
+
+    /* Content Alignment */
+    .contactInfo > *{
+        display: block;
+        float: left;
+        width: auto;
+        text-align: center;
+    }
+    .contactInfo > a{
+        padding: 10px 15px;
+        margin: 0 10px;
+    }
+    .material-icons{
+        padding: 0;
+    }
+
+    /* .nameTitle */
+    .nameTitle h1{
+        font-size: 1.2em;
+    }
+}
+
+@media only screen and (max-width: 660px){
+    .objective{
+        flex-direction: column;
+        text-align: center;
+    }
+    .resume-photo{
+        margin: 0 0 25px 0;
+    }
+}
+
+@media only screen and (max-width: 630px){
+    .contactInfo{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contactInfo h4, .contactInfo a{
+        margin: 0;
+    }
+    .contactInfo a{
+        padding: 8px 10px;
+    }
+    .skillsInfo span{
+        font-size: 11px;
+        padding: 4px 6px;
+    }
+    .educationInfo h4{
+        font-size: 0.7em;
+    }
+    .educationInfo h5{
+        font-size: 9px;
+    }
+}
+@media only screen and (max-width: 560px){
+    .contactInfo > h4, .contactInfo > a{
+        font-size: 13px !important;
+    }
+    .skillsInfo, .educationInfo{
+        height: auto;
+        width: 100%;
+        text-align: center;
+    }
+    .educationInfo h3, .skillsInfo h3{
+        font-size: 1.4em;
+    }
+    .educationInfo h4{
+        font-size: 0.9em;
+    }
+    .educationInfo h5, .skillsInfo h5{
+        font-size: 12px;
+    }
+    .eduSkillInfo{
+        flex-direction: column;
+    }
+}

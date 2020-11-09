@@ -3,17 +3,6 @@ h4{
     margin: 8px 0;
 }
 
-::-webkit-scrollbar {
-    width: 5px;
-}
-::-webkit-scrollbar-track {
-    background-color: transparent;
-}
-::-webkit-scrollbar-thumb {
-    background: #66635b;
-    border-radius: 20px;
-}
-
 /* Container Styles */
 .container{
     position: fixed;
@@ -255,12 +244,15 @@ h4{
 /* Experience Section */
 .experience{
     overflow: auto;
+    border-bottom: 2px solid #66635b;
+    padding: 25px 0;
 }
 .experience h2{
     font-family: 'Playfair Display', serif;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: normal;
+    margin-top: 0;
 }
 .experience h4{
     font-family: "Playfair Display", serif;
@@ -271,6 +263,48 @@ h4{
 .experience > h5{
     margin-top: 0;
     margin-bottom: 0;
+}
+.experience > ul:last-of-type{
+    margin-bottom: 0;
+}
+.volunteer{
+    border-bottom: 2px solid #66635b;
+    padding: 25px 0;
+}
+.volunteer h2{
+    text-transform: uppercase;
+    font-weight: normal;
+    font-family: 'Playfair Display', serif;
+}
+.volunteer h4{
+    margin-top: 30px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    font-family: 'Playfair Display', serif;
+}
+.volunteer > h5{
+    margin: 0;
+}
+
+/* Links */
+.mobileLinks span{
+    color: #645e4f;
+    font-size: 28px !important;
+}
+.download{
+    background-color: #e4dac9;
+    padding: 10px 15px;
+    border-radius: 3px;
+    width: 70%;
+    text-decoration: none;
+    transition: 0.3s linear;
+    border: 2px solid #e4dac9;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.download:hover{
+    box-shadow: inset -500px 0px 0px 0px #66635b;
+    color: #e4dac9;
 }
 
 /* Cottage Image by M wrona on Unsplash */

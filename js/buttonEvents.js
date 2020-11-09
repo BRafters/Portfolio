@@ -9,15 +9,24 @@ window.addEventListener('load', event => {
 
             // Change the color of the link
             link.style.color = "#" + colorHex;
+            var spanChildIcon = link.children;
+            spanChildIcon[0].style.color = "#" + colorHex;
         });
         link.addEventListener('mouseleave', event => {
-            link.style.color = "black";
+            link.style.color = "#645e4f";
+            var spanChildIcon = link.children;
+            spanChildIcon[0].style.color = "#645e4f";
         });
 
         // Event listener for the button click
         link.addEventListener('click', event => {
             document.getElementsByClassName('toggler')[0].checked = false;
         });
+    });
+
+    var overlay = document.getElementsByClassName("overlay")[0];
+    overlay.addEventListener('click', event => {
+        document.getElementsByClassName('toggler')[0].checked = false;
     });
 
 });
