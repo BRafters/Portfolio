@@ -17,6 +17,9 @@ const assets = [
     '/css/myWorksStyles.css',
     '/css/contactstyles.css',
     '/css/myresumestyles.css',
+    '/css/mobilestylesforworks.css',
+    '/css/myresumemobilestyles.css',
+    '/css/mobilestylesforindex.css',
 
     '/content/BrennanRaftersResume2019.pdf',
 
@@ -25,6 +28,25 @@ const assets = [
     '/images/ImagesForWorkExperience/lake_shore_mountains_enhanced.jpg',
     '/images/ImagesForWorkExperience/mountain_forest_dark_enhanced.jpg',
     '/images/ImagesForWorkExperience/mountain_lake_forest_enhancedAgain.jpg',
+    '/images/ImagesForWorkExperience/AndresNeel.jpg',
+    '/images/ImagesForWorkExperience/Blackjack.png',
+    '/images/ImagesForWorkExperience/Blogging.png',
+    '/images/ImagesForWorkExperience/Buses.png',
+    '/images/ImagesForWorkExperience/calculator.png',
+    '/images/ImagesForWorkExperience/Capston.png',
+    '/images/ImagesForWorkExperience/City.jpg',
+    '/images/ImagesForWorkExperience/ClayBanks.jpg',
+    '/images/ImagesForWorkExperience/forest_trees_fog.jpg',
+    '/images/ImagesForWorkExperience/jeremyBishop.jpg',
+    '/images/ImagesForWorkExperience/leaves_plant_green_118405_3000x4498.jpg',
+    '/images/ImagesForWorkExperience/leaves.jpg',
+    '/images/ImagesForWorkExperience/ListFragment.png',
+    '/images/ImagesForWorkExperience/map_weather.jpg',
+    '/images/ImagesForWorkExperience/Maze.png',
+    '/images/ImagesForWorkExperience/Maze.png',
+    '/images/ImagesForWorkExperience/Maze.png',
+    '/images/ImagesForWorkExperience/Maze.png',
+    '/images/ImagesForWorkExperience/Maze.png',
     '/images/arrow_drop_down_circle-24px.svg'
 ]
 

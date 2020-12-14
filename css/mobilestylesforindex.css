@@ -63,6 +63,7 @@
         margin: 25px 0;
         padding: 15px 0;
         width: 50%;
+        height: auto;
     }
     .careergoals.two, .skills.two, .lifegoals.two{
         margin: 0px !important;
@@ -85,5 +86,8 @@
     }
     .description{
         font-size: 14px !important;
+    }
+    .aboutmedescription{
+        font-size: 13px !important;
     }
 }

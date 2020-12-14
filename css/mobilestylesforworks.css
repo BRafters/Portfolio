@@ -45,6 +45,9 @@
 }
 
 @media only screen and (max-width: 750px){
+    .containers{
+        margin: 25px 0;
+    }
     .containers.js, .containers.cpp, .containers.app{
         height: 30vh;
     }
@@ -106,6 +109,9 @@
 }
 
 @media only screen and (max-width: 530px){
+    .containers{
+        margin: 0;
+    }
     .containers.app, .containers.cap, .containers.cpp, .containers.js, .containers.mmw{
         display: flex !important;
         flex-direction: column !important;
@@ -132,5 +138,8 @@
     }
     .right-col-one h3{
         font-size: 1.2em;
+    }
+    .works p{ 
+        font-size: 14px;
     }
 }
