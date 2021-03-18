@@ -31,7 +31,8 @@ app.get("", (req, res) => {
     // Render the index handlebars page using the res variable
     res.render("index",{
         title: "Brennan Rafters",
-        tabTitle: "Brennan Rafters E-Portfolio"
+        tabTitle: "Brennan Rafters E-Portfolio",
+        cssFile: "css/indexStyles.css"
     });
 });
 
