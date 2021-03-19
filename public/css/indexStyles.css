@@ -2,8 +2,11 @@ html{
     background-color: #e0e5ec;
 }
 h1{
-    font-family: "Arima Madurai", cursive;
+    font-family: "Montserrat", cursive;
+    font-weight: normal;
     color: #484349;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 /* Image Styles */

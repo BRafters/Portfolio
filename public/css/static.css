@@ -3,9 +3,18 @@ body{
     margin: 0;
 }
 nav{
-    position: relative;
-    top: 8px;
-    text-align: center;
+    display: flex;
+    position: absolute;
+    width: 100vw;
+    top: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Dark Mode Toggler Styles */
+.dark-mode-toggler{
+    position: absolute;
+    right: 35px;
 }
 
 /* Link Styles */
@@ -23,7 +32,7 @@ nav{
     border-radius: 50px;
     color: #484349;
     transition: 0.15s ease;
-
+    text-align: center;
 }
 .link:hover{
     border-radius: 14px;
