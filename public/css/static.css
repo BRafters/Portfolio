@@ -1,4 +1,7 @@
 /* General Styles */
+*{
+    font-family: "Nunito", sans-serif
+}
 body{
     margin: 0;
 }
@@ -7,14 +10,72 @@ nav{
     position: absolute;
     width: 100vw;
     top: 5px;
-    justify-content: center;
-    align-items: center;
 }
 
 /* Dark Mode Toggler Styles */
-.dark-mode-toggler{
+.toggle-container{
+    position:fixed;
+    bottom: 5px;
+    left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#slider-switch{
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 16px;
+}
+#slider-switch .dark-mode-toggler{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+#slider-round{
     position: absolute;
-    right: 35px;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(to left, #484349 50%,rgba(0,249,255,1) 0%, rgba(0,22,245,1) 99%);
+    transition: .4s;
+    -webkit-transition: .4s;
+    background-size: 200% 100%;
+    background-position: right;
+    transition: all .3s linear;
+    box-shadow: 5px 5px 9px #9fa3a8,
+    -5px -5px 9px #ffffff;
+}
+#slider-round:before{
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    /* left: 4px; */
+    bottom: -2px;
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+    -webkit-transition: .4s;
+    transition: .4s;
+    /* border: 1px solid #48434936; */
+}
+.dark-mode-toggler:checked + #slider-round{
+    background-position: left;
+}
+.dark-mode-toggler:checked + #slider-round:before{
+    -webkit-transform: translateX(32px);
+    -ms-transform: translateX(32px);
+    transform: translateX(32px);
+}
+#slider-round{
+    border-radius: 34px;
+}
+#slider-round:before{
+    border-radius: 50%;
+}
+.toggle-container h6{
+    margin-left: 10px;
 }
 
 /* Link Styles */
