@@ -1,16 +1,17 @@
 /* General Styles */
-/* *{
-    font-family: "Nunito", sans-serif
+html{
+    font-family: "Nunito", sans-serif;
 }
-*/
 body{ 
     margin: 0;
 }
 nav{
     display: flex;
     position: absolute;
+    justify-content: center;
+    align-items: center;
     width: 100vw;
-    top: 5px;
+    top: 8px;
 }
 
 /* Dark Mode Toggler Styles */
@@ -46,8 +47,6 @@ nav{
     background-size: 200% 100%;
     background-position: right;
     transition: all .3s linear;
-    box-shadow: 5px 5px 9px #9fa3a8,
-    -5px -5px 9px #ffffff;
 }
 #slider-round:before{
     position: absolute;
@@ -90,8 +89,8 @@ nav{
     letter-spacing: 1px;
     font-weight: bold;
     font-size: 14px;
-    margin: 0 5px;
-    border-radius: 50px;
+    margin: 0 12px;
+    border-radius: 14px;
     color: #484349;
     transition: 0.15s ease;
     text-align: center;
@@ -99,6 +98,11 @@ nav{
 .link:hover{
     border-radius: 14px;
     background: #e0e5ec;
-    box-shadow:  12px 12px 24px #acb0b6,
-             -12px -12px 24px #ffffff;
 }
+
+/* Toggles to dark mode
+.dark-mode-toggler:checked + h6{
+    color: white !important; 
+} */
+
+/* #2e415c dark mode color */

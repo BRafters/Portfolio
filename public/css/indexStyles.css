@@ -1,4 +1,4 @@
-html{
+body{
     background-color: #e0e5ec;
 }
 h1{
@@ -10,11 +10,9 @@ h1{
 }
 
 /* Image Styles */
-.profile-img{
+#profile-img{
     height: 300px;
     border-radius: 50%;
-    box-shadow:  12px 12px 24px #acb0b6,
-             -12px -12px 24px #ffffff;
 }
 
 /* Container Styles */
