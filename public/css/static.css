@@ -1,8 +1,8 @@
 /* General Styles */
-*{
+/* *{
     font-family: "Nunito", sans-serif
 }
-body{
+/* body{ */ */
     margin: 0;
 }
 nav{
@@ -39,7 +39,7 @@ nav{
     left: 0;
     bottom: 0;
     right: 0;
-    background: linear-gradient(to left, #484349 50%,rgba(0,249,255,1) 0%, rgba(0,22,245,1) 99%);
+    background: linear-gradient(to right, #484349 50%,rgba(0,249,255,1) 0%, rgba(0,22,245,1) 99%);
     transition: .4s;
     -webkit-transition: .4s;
     background-size: 200% 100%;
