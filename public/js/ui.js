@@ -1,3 +1,7 @@
+// Light & dark text color
+const darkText = "#484349";
+const lightText = "#f4efe6";
+
 // Event listener for the dark mode toggler
 window.addEventListener('load', event => {
     // Retrieve the dark mode toggle button
@@ -11,34 +15,38 @@ window.addEventListener('load', event => {
     });
 });
 
-// Changes the color of the page from dark mode to light mode
+// // // Changes the color of the page from dark mode to light mode
 function changeTheme(element){
     // Body elements
-    const body = document.getElementsByTagName("body")[0];
+    const lyr1 = document.getElementById("lyr1");
     const linkBtns = document.querySelectorAll(".link"); // Array
+    const linkTxt = document.querySelectorAll(".linkTxt");
     const titleText = document.getElementsByTagName("h1")[0];
     const darkThemeText = document.getElementsByTagName("h6")[0];
     const profilePic = document.getElementById("profile-img");
     const slider = document.getElementById("slider-round");
 
     // Light & dark theme color
-    const darkColor = "#2b3c55";
-    const lightColor = "#e0e5ec";
+    const darkColor = "linear-gradient(rgba(43, 60, 85, 1), rgba(43, 60, 85, 0.7))";
+    const lightColor = "linear-gradient(rgba(224, 229, 236, 1), rgba(224, 229, 236, 0.7))";
 
     // Light & dark text color
     const darkText = "#484349";
     const lightText = "#f4efe6";
 
     if(element.checked){
+
         // Set to dark mode
-        body.style.backgroundColor = darkColor;
+        lyr1.style.background = darkColor;
+
         
         // Lighting up text and fixing shadows for links
-        linkBtns.forEach(button => {
-            button.style.backgroundColor = darkColor;
-            button.style.color = lightText;
-            setNewMouseOverStyle(button);
-        });
+        for(var i = 0; i < linkBtns.length; i++){
+            linkBtns[i].style.backgroundColor = "inherit";
+            linkBtns[i].style.boxShadow = "none";
+            linkTxt[i].style.color = lightText;
+            setNewMouseOverStyle(linkBtns[i], linkTxt[i]);
+        }
 
         darkThemeText.style.color = lightText;
         titleText.style.color = lightText;
@@ -48,14 +56,15 @@ function changeTheme(element){
         slider.style.boxShadow = "5px 5px 9px #1c2737, -5px -5px 9px #3a5173";
     }
     else{
-        body.style.backgroundColor = lightColor;
+        lyr1.style.background = lightColor;
 
         // Darkening text and fixing shadows for links
-        linkBtns.forEach(button => {
-            button.style.backgroundColor = lightColor;
-            button.style.color = darkText;
-            setInitialMouseOverStyle(button);
-        });
+        for(var i = 0; i < linkBtns.length; i++){
+            linkBtns[i].style.backgroundColor = "inherit";
+            linkBtns[i].style.boxShadow = "none";
+            linkBtns[i].style.color = darkText;
+            setInitialMouseOverStyle(linkBtns[i], linkTxt[i]);
+        }
 
         darkThemeText.style.color = darkText;
         titleText.style.color = darkText;
@@ -67,20 +76,24 @@ function changeTheme(element){
 
 }
 
-function setNewMouseOverStyle(element){
-    element.addEventListener("mouseover", event => {
-        element.style.boxShadow = "8px 8px 20px #1c2737, -8px -8px 20px #3a5173";
+function setNewMouseOverStyle(elementOne, elementTwo){
+    elementOne.addEventListener("mouseover", event => {
+        elementOne.style.boxShadow = "0px 0px 20px -5px #222f42";
+        elementTwo.style.color = darkText;
     });
-    element.addEventListener("mouseout", event => {
-        element.style.boxShadow = "none";
+    elementOne.addEventListener("mouseout", event => {
+        elementOne.style.boxShadow = "none";
+        elementTwo.style.color = lightText;
     });
 }
 
-function setInitialMouseOverStyle(element){
-    element.addEventListener("mouseover", event => {
-        element.style.boxShadow = "8px 8px 20px #acb0b6, -8px -8px 20px #ffffff";
+function setInitialMouseOverStyle(elementOne, elementTwo){
+    elementOne.addEventListener("mouseover", event => {
+        elementOne.style.boxShadow = "0px 0px 20px -5px #8E8E8E";
+        elementTwo.style.color = darkText;
     });
-    element.addEventListener("mouseout", event => {
-        element.style.boxShadow = "none";
+    elementOne.addEventListener("mouseout", event => {
+        elementOne.style.boxShadow = "none";
+        elementTwo.style.color = darkText;
     });
 }
