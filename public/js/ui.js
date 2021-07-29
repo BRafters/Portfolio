@@ -15,10 +15,11 @@ window.addEventListener('load', event => {
     });
 });
 
-// // // Changes the color of the page from dark mode to light mode
+// Changes the color of the page from dark mode to light mode
 function changeTheme(element){
     // Body elements
-    const lyr1 = document.getElementById("lyr1");
+    const lyr1 = document.getElementsByClassName("container-main")[0];
+    const body = document.getElementById("bdy");
     const linkBtns = document.querySelectorAll(".link"); // Array
     const linkTxt = document.querySelectorAll(".linkTxt");
     const titleText = document.getElementsByTagName("h1")[0];
@@ -27,8 +28,10 @@ function changeTheme(element){
     const slider = document.getElementById("slider-round");
 
     // Light & dark theme color
-    const darkColor = "linear-gradient(rgba(43, 60, 85, 1), rgba(43, 60, 85, 0.7))";
-    const lightColor = "linear-gradient(rgba(224, 229, 236, 1), rgba(224, 229, 236, 0.7))";
+    const darkColor = "linear-gradient(rgba(43, 60, 85, 1), rgba(43, 60, 85, 0.7)), url('/img/capebreton.jpg')";
+    const lightColor = "linear-gradient(rgba(224, 229, 236, 1), rgba(224, 229, 236, 0.7)), url('/img/capebreton.jpg')";
+    const darkFlat = "rgba(43, 60, 85, 1)";
+    const lightFlat = "rgba(224, 229, 236, 1)";
 
     // Light & dark text color
     const darkText = "#484349";
@@ -38,7 +41,11 @@ function changeTheme(element){
 
         // Set to dark mode
         lyr1.style.background = darkColor;
-
+        lyr1.style.backgroundPosition = "center";
+        lyr1.style.backgroundSize = "cover";
+        lyr1.style.backgroundAttachment = "fixed";
+        lyr1.style.backgroundRepead = "no-repeat";
+        body.style.backgroundColor = darkFlat;
         
         // Lighting up text and fixing shadows for links
         for(var i = 0; i < linkBtns.length; i++){
@@ -57,6 +64,11 @@ function changeTheme(element){
     }
     else{
         lyr1.style.background = lightColor;
+        lyr1.style.backgroundPosition = "center";
+        lyr1.style.backgroundSize = "cover";
+        lyr1.style.backgroundAttachment = "fixed";
+        lyr1.style.backgroundRepead = "no-repeat";
+        body.style.backgroundColor = lightFlat;
 
         // Darkening text and fixing shadows for links
         for(var i = 0; i < linkBtns.length; i++){

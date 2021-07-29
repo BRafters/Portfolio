@@ -27,7 +27,7 @@ hbs.registerPartials(partialsPath);
 
 // All of the routes in this project are here
 /// Index page
-app.get("", (req, res) => {
+app.get("/", (req, res) => {
     // Render the index handlebars page using the res variable
     res.render("index",{
         firstName: "Brennan",

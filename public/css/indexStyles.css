@@ -1,9 +1,5 @@
 body{
-    background: url('/img/capebreton.jpg');
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+    
 }
 h1{
     font-family: "Montserrat", cursive;
@@ -12,7 +8,6 @@ h1{
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-
 /* Overlay Styles */
 .layerBG{
     z-index: -1;
@@ -40,19 +35,40 @@ h1{
 .container-main{
     height: 100vh;
     width: 100vw;
-    position: fixed;
-    top: 0;
-    left: 0;
 
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: -1;
-
-    
-
-    
 }
 .content{
     text-align: center;
+}
+.container-about-me{
+    height: 30vh;
+    width: 100vw;
+
+    z-index: -1;
+}
+
+/* Banner Styles */
+.banner-img:first-of-type{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Montserrat', cursive;
+    color: #484349;
+}
+.banner-img:first-of-type h2{
+    margin-top: 0;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.banner-img:first-of-type h5{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
 }

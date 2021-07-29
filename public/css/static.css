@@ -4,14 +4,22 @@ html{
 }
 body{ 
     margin: 0;
+    overflow-x: hidden !important;
 }
 nav{
     display: flex;
     position: absolute;
     justify-content: center;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     top: 8px;
+}
+
+/* Banner Styles */
+.banner{
+    width: 100vw;
+    height: 40vh;
+    text-align: center;
 }
 
 /* Dark Mode Toggler Styles */
@@ -94,7 +102,7 @@ nav{
     font-weight: bold;
     font-size: 14px;
     margin: 0 12px;
-    border-radius: 14px;
+    /* border-radius: 14px; */
     color: #484349;
     background: inherit;
     
@@ -116,7 +124,7 @@ nav{
     box-shadow: 0px 0px 20px -5px #8E8E8E !important;
     opacity: 0;
     z-index: 2;
-    border-radius: 14px;
+    border-radius: 5px;
     transition: 0.15s ease !important;
 }
 .link:nth-child(1):hover::after{
@@ -136,7 +144,7 @@ nav{
     box-shadow: 0px 0px 20px -5px #8E8E8E;
     opacity: 0;
     z-index: 2;
-    border-radius: 14px;
+    border-radius: 5px;
     transition: 0.15s ease !important;
 }
 .link:nth-child(2):hover::after{
@@ -156,7 +164,7 @@ nav{
     box-shadow: 0px 0px 20px -5px #8E8E8E;
     opacity: 0;
     z-index: 2;
-    border-radius: 14px;
+    border-radius: 5px;
     transition: 0.15s ease !important;
 }
 .link:nth-child(3):hover::after{
@@ -176,7 +184,7 @@ nav{
     box-shadow: 0px 0px 20px -5px #8E8E8E;
     opacity: 0;
     z-index: 2;
-    border-radius: 14px;
+    border-radius: 5px;
     transition: 0.15s ease !important;
 }
 .link:nth-child(4):hover::after{
@@ -196,7 +204,7 @@ nav{
     box-shadow: 0px 0px 20px -5px #8E8E8E;
     opacity: 0;
     z-index: 2;
-    border-radius: 14px;
+    border-radius: 5px;
     transition: 0.15s ease !important;
 }
 .link:nth-child(5):hover::after{
@@ -215,3 +223,8 @@ nav{
 } */
 
 /* #2e415c dark mode color */
+
+/* Photo by <a href="https://unsplash.com/@syinq?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Susan Q Yin</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */
+/* Photo by <a href="https://unsplash.com/@claybanks?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Clay Banks</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */
+/* Photo by <a href="https://unsplash.com/@danieljschwarz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Daniel J. Schwarz</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */
+  

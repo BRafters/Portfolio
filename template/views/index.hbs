@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     {{>head}}
-    <body>
+    <body id="bdy">
         <div class="layerBG"><div id="lyr1"></div></div>
         {{>navbar}}
         <div class="container-main">
@@ -10,6 +10,7 @@
                 <h1><strong>{{firstName}}</strong> {{lastName}}</h1>
             </div>
         </div>
+        {{>section headerText="test" subHeaderText="This is a test"}}
         <script src="js/ui.js"></script>
     </body>
 </html>
